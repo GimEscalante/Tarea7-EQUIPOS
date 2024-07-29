@@ -35,7 +35,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 15px 0px;
+    padding: 1px 0px;
 }
 
 .contenedor{
@@ -205,3 +205,48 @@ footer a{
     padding: 5px 0;
 }
 
+.card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.card .col-md-4 {
+    flex: 0 0 33.333%;
+}
+
+.card .col-md-8 {
+    flex: 0 0 66.666%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-price {
+    font-weight: bold;
+}
+
+.btn-primary {
+    margin-top: auto; /* Sitúa el botón en la parte inferior */
+}
+
+.imgModal {
+    text-align: center;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-footer {
+    justify-content: flex-start;
+}
+
+.modal-content {
+    border-radius: 0.5rem;
+}
