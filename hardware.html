@@ -15,128 +15,203 @@
 
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="/assets/procesador (1).png" alt="logo" class="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent ">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <!-- <a class="nav-link" href="#">Productos</a> -->
-                    <div class="dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                      </a>
-                        <ul class="dropdown-menu text-white">
-                        <li class="text-center border-bottom bg-secondary"><h6>Categorias</h6></li>
-                        <li><a class="dropdown-item" href="hardware.html">Hardware</a></li>
-                        <li><a class="dropdown-item" href="peripheals.html">Perifericos</a></li>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/procesador (1).png" alt="logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="d-flex justify-content-end">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Productos</a> -->
+                <div class="dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                  </a>
+                    <ul class="dropdown-menu text-white">
+                    <li class="text-center border-bottom bg-secondary"><h6>Categorias</h6></li>
+                    <li><a class="dropdown-item" href="hardware.html">Hardware</a></li>
+                    <li><a class="dropdown-item" href="peripheals.html">Perifericos</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacto</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        
+      </div>
+
+
+
+     
+  </nav>
+  </header>
+
+  <main>
+    <div class="container py-5">
+      <h1 class="text-center">Hardware</h1>
+
+      <div class="row row-cols-1 row-cols-md-3 g4 py-5">
+        <div class="col">
+          <div class="card">
+            <img src="assets/productos/placa.jpg" class="card-img-top" alt="placa">
+            <div class="card-body ">
+              <h5 class="card-title">Placa de Video ASUS GeForce RTX 4060 Ti 8GB GDDR6 ROG STRIX OC</h5>
+              <p class="card-text">Este componente electrónico procesa la información que llega al dispositivo y los transforma...</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <h3>$629.000</h3>
+             
+              <div class="boton">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                  Ver mas...
+                </button>
+              </div>
+              
+
+              <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Placa de Video ASUS GeForce RTX 4060 Ti 8GB GDDR6 ROG STRIX OC</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="imgModal">
+                        <img src="assets/productos/placa.jpg" class="img-fluid rounded-start" alt="placa">
+                      </div>
+                      Este componente electrónico procesa la información que llega al dispositivo y los transforma en imágenes o videos para mostrarla visualmente. Es ideal para trabajar con aplicaciones gráficas ya que permite obtener imágenes más nítidas.
+                    </div>
+                    <div>
+                      <ul>
+                        <li>Tamaño de la memoria: 8 GB.</li>
+                        <li>Interfaz PCI-Express 4.0.</li>
+                        <li>Bus de memoria: 128bit.</li>
                       </ul>
                     </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contacto</a>
-                  </li>
-                </ul>
-                
+                    <p class="precio d-flex justify-content-end m-3">$629.000</p>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                  </div>
+                </div>
               </div>
+
             </div>
-
-
-
-            <div class="dropdown d-flex justify-content-end" data-bs-theme="light">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
-                        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
-                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
-                    </svg>
-                </button> 
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-                  <li><a class="dropdown-item active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
-                    <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
-                  </svg> Modo claro
-                    </a>
-                    </li>
-                  <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
-                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
-                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
-                    </svg> Modo oscuro
-                    </a>
-                    </li>
-                </ul>
-              </div>
-              <div class="cart-container">
-                <button class="btn btn-secondary position-relative" id="cart-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                        <path d="M0 1a1 1 0 0 1 1-1h1.22a1 1 0 0 1 .98.8l.03.2L2.7 4H14a1 1 0 0 1 .98 1.2l-1.528 7.64a2 2 0 0 1-1.952 1.56H4.5a2 2 0 0 1-1.95-1.56L1.02 1.8 1 2a1 1 0 0 1-.98-.8L0 1zm5 11a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm-1.5 2a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
-                    </svg>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">
-                        0
-                        <span class="visually-hidden">productos en el carrito</span>
-                    </span>
-                </button>
-            </div>
-            <div id="cart-dropdown" class="cart-dropdown d-none">
-              <ul id="cart-items">
-                  
-              </ul>
-              <button id="clear-cart" class="btn btn-danger">Vaciar Carrito</button>
           </div>
-        </nav>
-      </header>
-      <main>
-        <div class="container py-5">
-          <h1 class="text-center">Hardware</h1>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="assets/productos/memoria.jpg" class="card-img-top" alt="memoria">
+            <div class="card-body ">
+              <h5 class="card-title">Memoria Team DDR5 32GB (2x16GB) 6400MHz T-Force Delta RGB Black CL40</h5>
+              <p class="card-text">Su capacidad de 32 GB distribuída en módulos de 2 x 16 GB hace de esta memoria un soporte ideal para...</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <h3>$65.000</h3>
+              
+              <div class="boton">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                  Ver mas...
+                </button>
+              </div>
+              
 
-          <div class="row row-cols-1 row-cols-md-3 g4 py-5">
-            <div class="col">
-              <div class="card">
-                <img src="/assets/placa.jpg" class="card-img-top" alt="...">
-                <div class="card-body ">
-                  <h5 class="card-title">Placa de Video ASUS GeForce RTX 4060 Ti 8GB GDDR6 ROG STRIX OC</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="d-flex justify-content-around mb-3">
-                  <h3>$629.000</h3>
-                  <button class="btn btn-primary add-to-cart" data-product-id="Placa de Video">Agregar al carrito</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="/assets/memoria.jpg" class="card-img-top" alt="...">
-                <div class="card-body ">
-                  <h5 class="card-title">Memoria Team DDR5 32GB (2x16GB) 6400MHz T-Force Delta RGB Black CL40</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="d-flex justify-content-around mb-3">
-                  <h3>$65.000</h3>
-                  <button class="btn btn-primary add-to-cart" data-product-id="Memoria Team DDR5">Agregar al carrito</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="/assets/mother.jpg" class="card-img-top" alt="...">
-                <div class="card-body ">
-                  <h5 class="card-title">Mother Gigabyte B650M AORUS ELITE AX WIFI DDR5 AM5</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="d-flex justify-content-around mb-3">
-                  <h3>$309.000</h3>
-                  <button class="btn btn-primary add-to-cart" data-product-id="Mother Gigabyte B650M">Agregar al carrito</button>
+              <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Memoria Team DDR5 32GB (2x16GB) 6400MHz T-Force Delta RGB Black CL40</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="imgModal">
+                        <img src="/assets/productos/memoria.jpg" class="img-fluid rounded-start" alt="memoria">
+                      </div>
+                      Su capacidad de 32 GB distribuída en módulos de 2 x 16 GB hace de esta memoria un soporte ideal para trabajos de diseño o edición a gran escala y juegos exigentes de alta gama.
+                      Tu equipo como nuevo
+                      Esta memoria es ideal para tu Computadoras de escritorio. ¡Instalala y comenzá a disfrutar de un óptimo funcionamiento!
+                    </div>
+                    <div>
+                      <ul>
+                        <li>Color de la luz: RGB</li>
+                        <li>Memoria con formato UDIMM.</li>
+                        <li>Alcanza una velocidad de 7200 MHz.</li>
+                      </ul>
+                    </div>
+                    <p class="precio d-flex justify-content-end m-3">$65.000</p>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </main>
+        <div class="col">
+          <div class="card">
+            <img src="assets/mother.jpg" class="card-img-top" alt="mother">
+            <div class="card-body ">
+              <h5 class="card-title">Mother Gigabyte B650M AORUS ELITE AX WIFI DDR5 AM5</h5>
+              <p class="card-text">Las placas base GIGABYTE están equipadas con una solución de energía...</p>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <h3>$309.000</h3>
+            
+              <div class="boton">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  Ver mas...
+                </button>
+              </div>
+              
+
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Mother Gigabyte B650M AORUS ELITE AX WIFI DDR5 AM5</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="imgModal">
+                        <img src="assets/mother.jpg" class="img-fluid rounded-start" alt="mother">
+                      </div>
+                      Las placas base GIGABYTE están equipadas con una solución de energía mejorada, los últimos estándares de almacenamiento y una conectividad excepcional para permitir un rendimiento optimizado para juegos.
+                      El rendimiento  inigualable de las placas base GIGABYTE está garantizado por un diseño térmico innovador y optimizado para garantizar la mejor estabilidad de CPU, chipset y SSD y bajas temperaturas bajo aplicaciones de carga completa y rendimiento de juegos.
+                    </div>
+                    <div>
+                      <ul>
+                        <li>Soporte DDR5 hasta 128 GB.</li>
+                        <li>Ranuras de expansión PCIe 4.0 y 3.0.</li>
+                        
+                      </ul>
+                    </div>
+                    <p class="precio d-flex justify-content-end m-3">$309.000</p>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
     
     <footer>
         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -154,63 +229,5 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        const cartButton = document.getElementById('cart-button');
-        const cartDropdown = document.getElementById('cart-dropdown');
-        const cartCount = document.getElementById('cart-count');
-        const cartItems = document.getElementById('cart-items');
-        const clearCartButton = document.getElementById('clear-cart');
-        const addToCartButtons = document.querySelectorAll('.add-to-cart');
-
-        function updateCartCount() {
-            cartCount.innerText = cart.length;
-        }
-
-        function renderCart() {
-            cartItems.innerHTML = '';
-            cart.forEach(productId => {
-                const item = document.createElement('li');
-                item.textContent = `Producto ID: ${productId}`;
-                cartItems.appendChild(item);
-            });
-        }
-
-        function toggleCartDropdown() {
-            cartDropdown.classList.toggle('d-none');
-            renderCart();
-        }
-
-        function addToCart(event) {
-            const productId = event.target.getAttribute('data-product-id');
-            if (!cart.includes(productId)) {
-                cart.push(productId);
-                localStorage.setItem('cart', JSON.stringify(cart));
-                updateCartCount();
-            }
-        }
-
-        function clearCart() {
-            cart = [];
-            localStorage.setItem('cart', JSON.stringify(cart));
-            updateCartCount();
-            renderCart();
-        }
-
-        cartButton.addEventListener('click', toggleCartDropdown);
-        clearCartButton.addEventListener('click', clearCart);
-
-        if (addToCartButtons.length > 0) {
-            addToCartButtons.forEach(button => {
-                button.addEventListener('click', addToCart);
-            });
-        } else {
-            console.log('No se encontraron botones para agregar al carrito.');
-        }
-
-        updateCartCount();
-    });
-  </script>
-  </body>
+</body>
 </html>

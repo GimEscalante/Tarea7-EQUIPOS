@@ -16,41 +16,39 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="/assets/procesador (1).png" alt="logo" class="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent ">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <!-- <a class="nav-link" href="#">Productos</a> -->
-                    <div class="dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                      </a>
-                        <ul class="dropdown-menu text-white">
-                        <li class="text-center border-bottom bg-secondary"><h6>Categorias</h6></li>
-                        <li><a class="dropdown-item" href="hardware.html">Hardware</a></li>
-                        <li><a class="dropdown-item" href="peripheals.html">Perifericos</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contacto</a>
-                  </li>
-                </ul>
-                
-              </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/procesador (1).png" alt="logo" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex justify-content-end">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="text-center border-bottom bg-secondary text-white"><h6>Categorías</h6></li>
+                    <li><a class="dropdown-item" href="hardware.html">Hardware</a></li>
+                    <li><a class="dropdown-item" href="peripherals.html">Periféricos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
 
 
 
-            <div class="dropdown d-flex justify-content-end" data-bs-theme="light">
+            <!-- <div class="dropdown d-flex justify-content-end" data-bs-theme="light">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
                         <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
@@ -70,25 +68,7 @@
                     </a>
                     </li>
                 </ul>
-              </div>
-              <div class="cart-container">
-                <button class="btn btn-secondary position-relative" id="cart-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                        <path d="M0 1a1 1 0 0 1 1-1h1.22a1 1 0 0 1 .98.8l.03.2L2.7 4H14a1 1 0 0 1 .98 1.2l-1.528 7.64a2 2 0 0 1-1.952 1.56H4.5a2 2 0 0 1-1.95-1.56L1.02 1.8 1 2a1 1 0 0 1-.98-.8L0 1zm5 11a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm-1.5 2a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
-                    </svg>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">
-                        0
-                        <span class="visually-hidden">productos en el carrito</span>
-                    </span>
-                </button>
-            </div>
-            <div id="cart-dropdown" class="cart-dropdown d-none">
-              <ul id="cart-items">
-                  <!-- Los productos se agregarán aquí -->
-              </ul>
-              <button id="clear-cart" class="btn btn-danger">Vaciar Carrito</button>
-          </div>
-            
+              </div> -->
         </nav>
     </header>
 
@@ -126,105 +106,244 @@
         </section>
         
         <section class="ofertas">
-            <h2 class="d-flex justify-content-center mb-5">¡Conocé nuestras ofertas!</h2>
-
-            <div id="productos">
-                <div class="card mb-3 container" >
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="assets/teclado.jpg" class="img-fluid rounded-start" alt="teclado">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between"">
-                                <h5 class="card-title">Teclado Redragon Kumara K552</h5>
-                                <p>$60.000</p>
-                            </div>
-                         
-                          <p class="card-text">El Kumara es un teclado mecánico TKL (sin pad numérico); compacto, pero ampliamente funcional. Y fuerte —muy fuerte—, gracias a que su estructura está reforzada con acero ...</p>
-                          <p class="envio card-text "><small class="text-body-secondary">Envío gratis</small></p>
-                        </div>
-                        <div class="boton">
-                          <button id="toggle-button" class="btn btn-primary">Ver más...</button>
-                        </div>
-                        
-                      </div>
-                    </div>
+          <h2 class="d-flex justify-content-center mb-5">¡Conocé nuestras ofertas!</h2>
+        
+          <div id="productos">
+            <!-- Tarjeta del teclado -->
+            <div class="card mb-3 container">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/productos/teclado.jpg" class="img-fluid rounded-start" alt="teclado">
                 </div>
-
-
-                <div class="card mb-3 container" >
-                    <div class="row g-0">
-                      <div class="col-md-4 ">
-                        <img src="/assets/teclado.jpg" class="img-fluid rounded-start" alt="teclado">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between"">
-                                <h5 class="card-title">Teclado Redragon Kumara K552</h5>
-                                <p>$60.000</p>
-                            </div>
-                         
-                          <p class="card-text">El Kumara es un teclado mecánico TKL (sin pad numérico); compacto, pero ampliamente funcional. Y fuerte —muy fuerte—, gracias a que su estructura está reforzada con acero ...</p>
-                          <p class="card-text "><small class="text-body-secondary">Envío gratis</small></p>
-                        </div>
-                        <div class="boton">
-                            <button type="button" class="btn btn-primary mb-3">Ver más...</button>
-                        </div>
-                        
-                      </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">Teclado Redragon Kumara K552</h5>
+                      <p>$60.000</p>
                     </div>
-                </div>
-
-
-                <div class="card mb-3 container" >
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="/assets/teclado.jpg" class="img-fluid rounded-start" alt="teclado">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between"">
-                                <h5 class="card-title">Teclado Redragon Kumara K552</h5>
-                                <p>$60.000</p>
-                            </div>
-                         
-                          <p class="card-text">El Kumara es un teclado mecánico TKL (sin pad numérico); compacto, pero ampliamente funcional. Y fuerte —muy fuerte—, gracias a que su estructura está reforzada con acero ...</p>
-                          <p class="envio card-text "><small class="text-body-secondary">Envío gratis</small></p>
+                    <!-- Descripción reducida para móvil -->
+                    <p class="card-text d-none d-md-block">
+                      El Kumara es un teclado mecánico TKL (sin pad numérico); compacto, pero ampliamente funcional. Y fuerte —muy fuerte—, gracias a que su estructura está reforzada con acero ...
+                    </p>
+                    <p class="card-text d-md-none">
+                      Teclado mecánico compacto y resistente con estructura reforzada.
+                    </p>
+                    <p class="envio card-text"><small class="text-body-secondary">Envío gratis</small></p>
+                  </div>
+                  <div class="boton">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Ver más...
+                    </button>
+                  </div>
+        
+                  <!-- Modal para el teclado -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Teclado Redragon Kumara K552</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="boton">
-                            <button type="button" class="btn btn-primary mb-3">Ver más...</button>
-                        </div>
-                        
-                      </div>
-                    </div>
-                </div>
-
-
-                <div class="card mb-3 container" >
-                  <div class="row g-0">
-                    <div class="col-md-4 ">
-                      <img src="/assets/teclado.jpg" class="img-fluid rounded-start" alt="teclado">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                          <div class="d-flex justify-content-between"">
-                              <h5 class="card-title">Teclado Redragon Kumara K552</h5>
-                              <p>$60.000</p>
+                        <div class="modal-body">
+                          <div class="imgModal">
+                            <img src="assets/productos/teclado.jpg" class="img-fluid rounded-start" alt="teclado">
                           </div>
+                          El Kumara es un teclado mecánico TKL (sin pad numérico); compacto, pero ampliamente funcional. Y fuerte —muy fuerte—, gracias a que su estructura está reforzada con acero. Es virtualmente irrompible y tiene una durabilidad extraordinaria. Todos sus componentes están diseñados para soportar las exigencias del juego competitivo de alta intensidad. Está preparado para resistir, además, derrames y salpicaduras, gracias a su sistema de drenaje y sus switches tipo box.
                         </div>
-                      </div>
-                      <div>
-                        <p class="card-text">El Kumara es un teclado mecánico TKL (sin pad numérico); compacto, pero ampliamente funcional. Y fuerte —muy fuerte—, gracias a que su estructura está reforzada con acero ...</p>
-                        <p class="card-text "><small class="text-body-secondary">Envío gratis</small></p>
-                      </div>
-                      <div class="boton">
-                          <button type="button" class="btn btn-primary mb-3">Ver más...</button>
+                        <div>
+                          <ul>
+                            <li>Tipo de teclado: mecánico.</li>
+                            <li>Layout: QWERTY</li>
+                            <li>Ergonómico y apto para diversos usos.</li>
+                          </ul>
+                        </div>
+                        <p class="precio d-flex justify-content-end m-3">$60.000</p>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>  
-            </div> 
+                </div>
+              </div>
+            </div>
+        
+            <!-- Tarjeta de la mother -->
+            <div class="card mb-3 container">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/productos/mother.jpg" class="img-fluid rounded-start" alt="mother">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">Mother Gigabyte B650M AORUS ELITE AX WIFI DDR5 AM5</h5>
+                      <p>$309.000</p>
+                    </div>
+                    <!-- Descripción reducida para móvil -->
+                    <p class="card-text d-none d-md-block">
+                      Las placas base GIGABYTE están equipadas con una solución de energía mejorada, los últimos estándares de almacenamiento y una conectividad excepcional para permitir un rendimiento optimizado para juegos.
+                    </p>
+                    <p class="card-text d-md-none">
+                      Placa base con energía mejorada y conectividad excepcional para juegos.
+                    </p>
+                    <p class="envio card-text"><small class="text-body-secondary">Envío gratis</small></p>
+                  </div>
+                  <div class="boton">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                      Ver más...
+                    </button>
+                  </div>
+        
+                  <!-- Modal para la mother -->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Mother Gigabyte B650M AORUS ELITE AX WIFI DDR5 AM5</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="imgModal">
+                            <img src="assets/productos/mother.jpg" class="img-fluid rounded-start" alt="mother">
+                          </div>
+                          Las placas base GIGABYTE están equipadas con una solución de energía mejorada, los últimos estándares de almacenamiento y una conectividad excepcional para permitir un rendimiento optimizado para juegos. El rendimiento inigualable de las placas base GIGABYTE está garantizado por un diseño térmico innovador y optimizado para garantizar la mejor estabilidad de CPU, chipset y SSD y bajas temperaturas bajo aplicaciones de carga completa y rendimiento de juegos.
+                        </div>
+                        <div>
+                          <ul>
+                            <li>Soporte DDR5 hasta 128 GB.</li>
+                            <li>Ranuras de expansión PCIe 4.0 y 3.0.</li>
+                          </ul>
+                        </div>
+                        <p class="precio d-flex justify-content-end m-3">$309.000</p>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Tarjeta del mouse -->
+            <div class="card mb-3 container">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/productos/mouse.jpg" class="img-fluid rounded-start" alt="mouse">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">Mouse Redragon Cobra M711-W White</h5>
+                      <p>$45.000</p>
+                    </div>
+                    <!-- Descripción reducida para móvil -->
+                    <p class="card-text d-none d-md-block">
+                      Su diseño eficaz hace de este mouse un elemento cómodo, con una gran experiencia de uso para aquellas personas que buscan seguridad en cada click...
+                    </p>
+                    <p class="card-text d-md-none">
+                      Mouse cómodo con diseño eficaz y alta precisión.
+                    </p>
+                    <p class="envio card-text"><small class="text-body-secondary">Envío gratis</small></p>
+                  </div>
+                  <div class="boton">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                      Ver más...
+                    </button>
+                  </div>
+        
+                  <!-- Modal para el mouse -->
+                  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Mouse Redragon Cobra M711-W White</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="imgModal">
+                            <img src="assets/productos/mouse.jpg" class="img-fluid rounded-start" alt="mouse">
+                          </div>
+                          Su diseño eficaz hace de este mouse un elemento cómodo, con una gran experiencia de uso para aquellas personas que buscan seguridad en cada click. El sistema de detección de movimiento óptico te permitirá mover el cursor de una manera más precisa y sensible que en los sistemas tradicionales. Solo debes colocar el receptor en un puerto USB de la computadora y ya puedes empezar a usarlo. No hace falta emparejar el mouse ni descargar software para utilizarlo.
+                        </div>
+                        <div>
+                          <ul>
+                            <li>Utiliza cable.</li>
+                            <li>Posee rueda de desplazamiento.</li>
+                            <li>Con sensor óptico.</li>
+                          </ul>
+                        </div>
+                        <p class="precio d-flex justify-content-end m-3">$45.000</p>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Tarjeta de la memoria -->
+            <div class="card mb-3 container">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/productos/memoria.jpg" class="img-fluid rounded-start" alt="memoria">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">Memoria Team DDR5 32GB (2x16GB) 6400MHz T-Force Delta RGB Black CL40</h5>
+                      <p>$65.000</p>
+                    </div>
+                    <!-- Descripción reducida para móvil -->
+                    <p class="card-text d-none d-md-block">
+                      Su capacidad de 32 GB distribuída en módulos de 2 x 16 GB hace de esta memoria un soporte ideal para trabajos de diseño o edición a gran escala y juegos exigentes de alta gama.
+                    </p>
+                    <p class="card-text d-md-none">
+                      Memoria de 32 GB ideal para diseño, edición y juegos de alta gama.
+                    </p>
+                    <p class="envio card-text"><small class="text-body-secondary">Envío gratis</small></p>
+                  </div>
+                  <div class="boton">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                      Ver más...
+                    </button>
+                  </div>
+        
+                  <!-- Modal para la memoria -->
+                  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Memoria Team DDR5 32GB (2x16GB) 6400MHz T-Force Delta RGB Black CL40</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="imgModal">
+                            <img src="assets/productos/memoria.jpg" class="img-fluid rounded-start" alt="memoria">
+                          </div>
+                          Su capacidad de 32 GB distribuída en módulos de 2 x 16 GB hace de esta memoria un soporte ideal para trabajos de diseño o edición a gran escala y juegos exigentes de alta gama. Esta memoria es ideal para tus computadoras de escritorio. ¡Instálala y comienza a disfrutar de un óptimo funcionamiento!
+                        </div>
+                        <div>
+                          <ul>
+                            <li>Color de la luz: RGB</li>
+                            <li>Memoria con formato UDIMM.</li>
+                            <li>Alcanza una velocidad de 7200 MHz.</li>
+                          </ul>
+                        </div>
+                        <p class="precio d-flex justify-content-end m-3">$65.000</p>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
 
@@ -323,79 +442,8 @@
         </svg></a>
         
     </footer>
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        const cartButton = document.getElementById('cart-button');
-        const cartDropdown = document.getElementById('cart-dropdown');
-        const cartCount = document.getElementById('cart-count');
-        const cartItems = document.getElementById('cart-items');
-        const clearCartButton = document.getElementById('clear-cart');
-        const addToCartButtons = document.querySelectorAll('.add-to-cart');
-
-        function updateCartCount() {
-            cartCount.innerText = cart.length;
-        }
-
-        function renderCart() {
-            cartItems.innerHTML = '';
-            cart.forEach(productId => {
-                const item = document.createElement('li');
-                item.textContent = `Producto ID: ${productId}`;
-                cartItems.appendChild(item);
-            });
-        }
-
-        function toggleCartDropdown() {
-            cartDropdown.classList.toggle('d-none');
-            renderCart();
-        }
-
-        function addToCart(event) {
-            const productId = event.target.getAttribute('data-product-id');
-            if (!cart.includes(productId)) {
-                cart.push(productId);
-                localStorage.setItem('cart', JSON.stringify(cart));
-                updateCartCount();
-            }
-        }
-
-        function clearCart() {
-            cart = [];
-            localStorage.setItem('cart', JSON.stringify(cart));
-            updateCartCount();
-            renderCart();
-        }
-
-        cartButton.addEventListener('click', toggleCartDropdown);
-        clearCartButton.addEventListener('click', clearCart);
-
-        if (addToCartButtons.length > 0) {
-            addToCartButtons.forEach(button => {
-                button.addEventListener('click', addToCart);
-            });
-        } else {
-            console.log('No se encontraron botones para agregar al carrito.');
-        }
-
-        updateCartCount();
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-            const toggleButton = document.getElementById('toggle-button');
-            const moreContent = document.getElementById('more-content');
-            
-            toggleButton.addEventListener('click', function() {
-                moreContent.classList.toggle('d-none');
-                
-                if (moreContent.classList.contains('d-none')) {
-                    toggleButton.textContent = 'Ver más...';
-                } else {
-                    toggleButton.textContent = 'Ver menos';
-                }
-            });
-        });
-  </script>
   </body>
 </html>
