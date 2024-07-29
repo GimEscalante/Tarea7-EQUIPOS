@@ -13,6 +13,31 @@
     margin-top: 10px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal de la página */
+main {
+    flex: 1; /* Hace que el main tome el espacio restante entre el header y el footer */
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0px;
+}
+
 .contenedor{
     display: flex;
     justify-content: center;
