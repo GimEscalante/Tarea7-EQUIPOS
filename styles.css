@@ -150,3 +150,13 @@ footer a{
     height: 100px;
     object-fit: contain; /* Asegura que el logo se ajuste dentro del tamaño sin perder proporciones */
 }
+
+.modal-dialog {
+    max-width: 80%; /* Ajusta el ancho máximo del modal si es necesario */
+  }
+.modal-content {
+    background-color: #f8f9fa; /* Color de fondo del modal */
+  }
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+  }
