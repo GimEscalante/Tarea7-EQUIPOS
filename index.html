@@ -16,46 +16,58 @@
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/Tarea7-EQUIPOS/assets/procesador (1).png" alt="logo" class="logo"></a>
+          <a class="navbar-brand" href="#"><img src="/assets/procesador (1).png" alt="logo" class="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="d-flex justify-content-end">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent ">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <!-- <a class="nav-link" href="#">Productos</a> -->
-                  <div class="dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Productos
-                    </a>
-                      <ul class="dropdown-menu text-white">
-                      <li class="text-center border-bottom bg-secondary"><h6>Categorias</h6></li>
-                      <li><a class="dropdown-item" href="hardware.html">Hardware</a></li>
-                      <li><a class="dropdown-item" href="peripheals.html">Perifericos</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contacto</a>
-                </li>
-              </ul>
-              
-            </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="text-center border-bottom bg-secondary text-white"><h6>Categorías</h6></li>
+                  <li><a class="dropdown-item" href="hardware.html">Hardware</a></li>
+                  <li><a class="dropdown-item" href="peripherals.html">Periféricos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacto</a>
+              </li>
+            </ul>
           </div>
-          
         </div>
 
 
 
-       
-    </nav>
+            <!-- <div class="dropdown d-flex justify-content-end" data-bs-theme="light">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                    </svg>
+                </button> 
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+                  <li><a class="dropdown-item active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                    <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                  </svg> Modo claro
+                    </a>
+                    </li>
+                  <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                    </svg> Modo oscuro
+                    </a>
+                    </li>
+                </ul>
+              </div> -->
+        </nav>
     </header>
 
 
@@ -92,250 +104,105 @@
         </section>
         
         <section class="ofertas">
-          <h2 class="d-flex justify-content-center mb-5">¡Conocé nuestras ofertas!</h2>
-
-          <div id="productos">
-            <div class="card mb-3 container" >
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="/assets/productos/teclado.jpg" class="img-fluid rounded-start" alt="teclado">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                      <div class="d-flex justify-content-between"">
-                          <h5 class="card-title">Teclado Redragon Kumara K552</h5>
-                          <p>$60.000</p>
+            <h2 class="d-flex justify-content-center mb-5">¡Conocé nuestras ofertas!</h2>
+            
+            <div id="productos">
+              <!-- Producto 1: Teclado -->
+              <div class="card mb-3 container">
+                  <div class="row g-0">
+                      <div class="col-12 col-md-4">
+                          <img src="/assets/teclado.jpg" class="img-fluid rounded-start" alt="teclado">
                       </div>
-                   
-                    <p class="card-text">El Kumara es un teclado mecánico TKL (sin pad numérico); compacto, pero ampliamente funcional. Y fuerte —muy fuerte—, gracias a que su estructura está reforzada con acero ...</p>
-                    <p class="envio card-text "><small class="text-body-secondary">Envío gratis</small></p>
-                  </div>
-                  <div class="boton">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      Ver mas...
-                    </button>
-                  </div>
-                  
-
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">Teclado Redragon Kumara K552</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="imgModal">
-                            <img src="/assets/productos/teclado.jpg" class="img-fluid rounded-start" alt="teclado">
+                      <div class="col-12 col-md-8">
+                          <div class="card-body">
+                              <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                  <h5 class="card-title mb-0">Teclado Redragon Kumara K552</h5>
+                                  <p class="mb-0 mt-2 mt-md-0">$60.000</p>
+                              </div>
+                              <p class="card-text mt-2 d-md-none">Teclado mecánico para gaming.</p>
+                              <p class="card-text mt-2 d-none d-md-block">El Razer BlackWidow es un teclado mecánico diseñado para gaming, con switches mecánicos Razer, iluminación RGB y una durabilidad excepcional.</p>
+                              <p class="envio card-text"><small class="text-body-secondary">Envío gratis</small></p>
                           </div>
-                          El Kumara es un teclado mecánico TKL (sin pad numérico); compacto, pero ampliamente funcional.
-                          Y fuerte —muy fuerte—, gracias a que su estructura está reforzada con acero. 
-                          Es virtualmente irrompible y tiene una durabilidad extraordinaria.
-
-                          Todos sus componentes están diseñados para soportar las exigencias del juego competitivo de alta intensidad. 
-                          Está preparado para resistir, además, derrames y salpicaduras, gracias a su sistema de drenando y sus switches tipo box.
-                        </div>
-                        <div>
-                          <ul>
-                            <li>Tipo de teclado: mecánico.</li>
-                            <li>Layout: QWERTY</li>
-                            <li>Ergonómico y apto para diversos usos.</li>
-                          </ul>
-                        </div>
-                        <p class="precio d-flex justify-content-end m-3">$60.000</p>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                          <button type="button" class="btn btn-primary">Añadir al carrito</button>
-                        </div>
+                          <div class="boton text-end">
+                              <button type="button" class="btn btn-primary mb-3">Ver más...</button>
+                          </div>
                       </div>
-                    </div>
                   </div>
-                  
-                </div>
               </div>
-          </div>
-
-          <div class="card mb-3 container">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="/assets/productos/mother.jpg" class="img-fluid rounded-start" alt="mother">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between"">
-                        <h5 class="card-title">Mother Gigabyte B650M AORUS ELITE AX WIFI DDR5 AM5</h5>
-                        <p>$309.000</p>
-                    </div>
-                 
-                  <p class="card-text">Las placas base GIGABYTE están equipadas con una solución de energía mejorada, los últimos estándares de almacenamiento y una conectividad excepcional p...</p>
-                  <p class="envio card-text "><small class="text-body-secondary">Envío gratis</small></p>
-                </div>
-                <div class="boton">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                    Ver mas...
-                  </button>
-                </div>
-                
-
-                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Mother Gigabyte B650M AORUS ELITE AX WIFI DDR5 AM5</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      
+              <!-- Producto 2: Auriculares -->
+              <div class="card mb-3 container">
+                  <div class="row g-0">
+                      <div class="col-12 col-md-4">
+                          <img src="/assets/auriculares.jpg" class="img-fluid rounded-start" alt="auriculares">
                       </div>
-                      <div class="modal-body">
-                        <div class="imgModal">
-                          <img src="/assets/productos/mother.jpg" class="img-fluid rounded-start" alt="mother">
-                        </div>
-                        Las placas base GIGABYTE están equipadas con una solución de energía mejorada, 
-                        los últimos estándares de almacenamiento y una conectividad excepcional para permitir un rendimiento optimizado para juegos.
-                        El rendimiento inigualable de las placas base GIGABYTE está garantizado por un diseño térmico innovador y optimizado para 
-                        garantizar la mejor estabilidad de CPU, chipset y SSD y bajas temperaturas bajo aplicaciones de carga completa y rendimiento de juegos.
+                      <div class="col-12 col-md-8">
+                          <div class="card-body">
+                              <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                  <h5 class="card-title mb-0">Auriculares HyperX Cloud II</h5>
+                                  <p class="mb-0 mt-2 mt-md-0">$45.000</p>
+                              </div>
+                              <p class="card-text mt-2 d-md-none">Auriculares inalámbricos con cancelación de ruido.</p>
+                              <p class="card-text mt-2 d-none d-md-block">Los Sony WH-1000XM4 son auriculares inalámbricos con cancelación de ruido líder en la industria, sonido de alta calidad y hasta 30 horas de duración de batería.</p>
+                              <p class="envio card-text"><small class="text-body-secondary">Envío gratis</small></p>
+                          </div>
+                          <div class="boton text-end">
+                              <button type="button" class="btn btn-primary mb-3">Ver más...</button>
+                          </div>
                       </div>
-                      <div>
-                        <ul>
-                          <li>Soporte DDR5 hasta 128 GB.</li>
-                          <li>Ranuras de expansión PCIe 4.0 y 3.0.</li>
-                          
-                        </ul>
+                  </div>
+              </div>
+      
+              <!-- Producto 3: Procesador -->
+              <div class="card mb-3 container">
+                  <div class="row g-0">
+                      <div class="col-12 col-md-4">
+                          <img src="/assets/procesador (1).png" class="img-fluid rounded-start" alt="procesador">
                       </div>
-                      <p class="precio d-flex justify-content-end m-3">$309.000</p>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                      <div class="col-12 col-md-8">
+                          <div class="card-body">
+                              <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                  <h5 class="card-title mb-0">Procesador Intel Core i7-10700K</h5>
+                                  <p class="mb-0 mt-2 mt-md-0">$120.000</p>
+                              </div>
+                              <p class="card-text mt-2 d-md-none">Procesador de 8 núcleos y 16 hilos.</p>
+                              <p class="card-text mt-2 d-none d-md-block">El Intel Core i7-10700K es un procesador de 8 núcleos y 16 hilos con una frecuencia base de 3.8 GHz y una frecuencia turbo de hasta 5.1 GHz, ideal para gaming y tareas intensivas.</p>
+                              <p class="envio card-text"><small class="text-body-secondary">Envío gratis</small></p>
+                          </div>
+                          <div class="boton text-end">
+                              <button type="button" class="btn btn-primary mb-3">Ver más...</button>
+                          </div>
                       </div>
-                    </div>
                   </div>
-                </div>
-                
               </div>
-            </div>
-          </div>
-
-          <div class="card mb-3 container" >
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="/assets/productos/mouse.jgp" class="img-fluid rounded-start" alt="mouse">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                  <div class="d-flex justify-content-between"">
-                      <h5 class="card-title">Mouse Redragon Cobra M711-W White</h5>
-                      <p>$45.000</p>
-                  </div>
-               
-                <p class="card-text">Su diseño eficaz hace de este mouse un elemento cómodo, con una gran experiencia de uso para aquellas personas que buscan seguridad en cada click...</p>
-                <p class="envio card-text "><small class="text-body-secondary">Envío gratis</small></p>
-              </div>
-              <div class="boton">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                  Ver mas...
-                </button>
-              </div>
-              
-
-              <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Mouse Redragon Cobra M711-W White</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="imgModal">
-                        <img src="/assets/productos/mouse.jgp" class="img-fluid rounded-start" alt="mouse">
+      
+              <!-- Producto 4: Placa Madre -->
+              <div class="card mb-3 container">
+                  <div class="row g-0">
+                      <div class="col-12 col-md-4">
+                          <img src="/assets/placa.jpg" class="img-fluid rounded-start" alt="placa madre">
                       </div>
-                      Su diseño eficaz hace de este mouse un elemento cómodo, con una gran experiencia de uso para aquellas personas que buscan seguridad en cada click.
-
-                      La funcionalidad al alcance de tu mano
-                      El sistema de detección de movimiento óptico te permitirá mover el cursor de una manera más precisa y sensible que en los sistemas tradicionales.
-
-
-                      Solo debés colocar el receptor en un puerto USB de la computadora y ya podés empezar a usarlo. No hace falta emparejar el mouse ni descargar software para utilizarlo.
-                    </div>
-                    <div>
-                      <ul>
-                        <li>Utiliza cable.</li>
-                        <li>Posee rueda de desplazamiento.</li>
-                        <li>Con sensor óptico.</li>
-                      </ul>
-                    </div>
-                    <p class="precio d-flex justify-content-end m-3">$45.000</p>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="button" class="btn btn-primary">Añadir al carrito</button>
-                    </div>
+                      <div class="col-12 col-md-8">
+                          <div class="card-body">
+                              <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                  <h5 class="card-title mb-0">Placa Madre ASUS ROG Strix Z490-E</h5>
+                                  <p class="mb-0 mt-2 mt-md-0">$80.000</p>
+                              </div>
+                              <p class="card-text mt-2 d-md-none">Placa madre ATX con soporte para procesadores Intel de 10ª generación.</p>
+                              <p class="card-text mt-2 d-none d-md-block">La ASUS ROG Strix Z490-E es una placa madre ATX con soporte para procesadores Intel de 10ª generación, Wi-Fi 6, y múltiples opciones de conectividad y expansión para entusiastas del hardware.</p>
+                              <p class="envio card-text"><small class="text-body-secondary">Envío gratis</small></p>
+                          </div>
+                          <div class="boton text-end">
+                              <button type="button" class="btn btn-primary mb-3">Ver más...</button>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-              
-            </div>
           </div>
-      </div>
-
-      <div class="card mb-3 container" >
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="/assets/productos/memoria.jpg" class="img-fluid rounded-start" alt="memoria">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-                <div class="d-flex justify-content-between"">
-                    <h5 class="card-title">Memoria Team DDR5 32GB (2x16GB) 6400MHz T-Force Delta RGB Black CL40</h5>
-                    <p>$65.000</p>
-                </div>
-             
-              <p class="card-text">Su capacidad de 32 GB distribuída en módulos de 2 x 16 GB hace de esta memoria un soporte ideal para...</p>
-              <p class="envio card-text "><small class="text-body-secondary">Envío gratis</small></p>
-            </div>
-            <div class="boton">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                Ver mas...
-              </button>
-            </div>
-            
-
-            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Memoria Team DDR5 32GB (2x16GB) 6400MHz T-Force Delta RGB Black CL40</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="imgModal">
-                      <img src="/assets/productos/memoria.jpg" class="img-fluid rounded-start" alt="memoria">
-                    </div>
-                    Su capacidad de 32 GB distribuída en módulos de 2 x 16 GB hace de esta memoria un soporte ideal para trabajos de diseño o edición a gran escala y juegos exigentes de alta gama.
-
-                    Tu equipo como nuevo
-                    Esta memoria es ideal para tu Computadoras de escritorio. ¡Instalala y comenzá a disfrutar de un óptimo funcionamiento!
-                  </div>
-                  <div>
-                    <ul>
-                      <li>Color de la luz: RGB</li>
-                      <li>Memoria con formato UDIMM.</li>
-                      <li>Alcanza una velocidad de 7200 MHz.</li>
-                    </ul>
-                  </div>
-                  <p class="precio d-flex justify-content-end m-3">$65.000</p>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Añadir al carrito</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          </div>
-         </div>  
-          </div>
-    </section>
+        </section>
 
 
-        <section class="m-5">
+        <section>
           <div class="logo-slider">
               <div class="logo-slide-track"> 
                   <div class="slide">
@@ -416,7 +283,6 @@
           </div>
       </section>
     </main>
-
     <footer>
         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
@@ -432,6 +298,7 @@
         
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
