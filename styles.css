@@ -13,10 +13,6 @@
     margin-top: 10px;
 }
 
-.dropdown{
-    margin-right: 60px;
-}
-
 .contenedor{
     display: flex;
     justify-content: center;
@@ -49,10 +45,13 @@ h2{
 .card img{
     padding: 20px;
     
+    
 }
 
-
-
+.card-img-top{
+    width: 200px;
+    height: 300px;
+}
 .boton{
     display: flex;
     justify-content: end;
