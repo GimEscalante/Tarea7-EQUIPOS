@@ -13,10 +13,6 @@
     margin-top: 10px;
 }
 
-.dropdown{
-    margin-right: 60px;
-}
-
 .contenedor{
     display: flex;
     justify-content: center;
@@ -49,14 +45,18 @@ h2{
 .card img{
     padding: 20px;
     
+    
 }
 
-
-
+.card-img-top{
+    width: 200px;
+    height: 300px;
+}
 .boton{
     display: flex;
     justify-content: end;
     margin-right: 15px;
+    margin-bottom: 10px;
     
 }
 
@@ -87,3 +87,67 @@ footer a{
     margin: 10px;
 }
 
+/* Logo Slider */
+.logo-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.logo-slider::before,
+.logo-slider::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.logo-slider::before {
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+}
+
+.logo-slider::after {
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+}
+
+.logo-slide-track {
+    display: flex;
+    animation: logo-scroll 20s linear infinite;
+    width: calc(250px * 24); /* Ajustar según el número de imágenes duplicadas */
+}
+
+.slide {
+    flex: 0 0 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@keyframes logo-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 12)); /* Ajustar según el número de imágenes duplicadas */
+    }
+}
+
+
+.slide img {
+    width: 150px; 
+    height: 100px;
+    object-fit: contain; /* Asegura que el logo se ajuste dentro del tamaño sin perder proporciones */
+}
